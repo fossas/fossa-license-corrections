@@ -3,7 +3,7 @@ A one-off scripty way to do license corrections in FOSSA
 
 ### How to use this script
 
-Provide the fetcher, package name, license grouping, list of licenses and your FOSSA API Key. The list of license ids can be fetched from the FOSSA UI. Ask the FOSSA support team or your dedicated Customer Success team to give you the list of licenses.
+Provide the fetcher, package name, license grouping, list of licenses and your FOSSA API Key. The list of license ids can be fetched from the FOSSA UI. Ask the FOSSA support team or your dedicated Customer Success team to give you the list of licenses. The list of packages can be exported from the issues page (project/global).
 
 #### Fetcher type
 
