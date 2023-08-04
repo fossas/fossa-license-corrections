@@ -54,7 +54,7 @@ You must have a csv file with the following headers and supplied data for requir
 - `corrected-license-text`: This is the path to the corrected license.
 - `package-url`: This is the correct package url.
 
-The data must be clean and understandable, and it must match your understanding of how the license corrections must be done. A package with a singular license correction with a grouping of `linked-grouping` is valid, and acts like a `separate-grouping`, but it is not recommended to label such an entry.
+The data must be clean and understandable, and it must match your understanding of how the license corrections must be done. A package with a singular license correction with a grouping of `linked-grouping` is valid, and acts like a `separate-grouping`, but it is not recommended to label such an entry. Please review the test data that is included in this repository.
 
 ### How to use this script
 
