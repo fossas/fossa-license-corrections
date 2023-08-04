@@ -1,5 +1,11 @@
 # License Corrections
-A one-off scripty way to do license corrections in FOSSA
+
+Here are some ways to do license corrections in FOSSA:
+
+- For singular license corrections, use `license-corrections.js`
+- For bulks license corrections, use `bulk-license-corrections.js`
+
+## Guide for using `license-corrections.js`
 
 ### How to use this script
 
@@ -31,3 +37,33 @@ node license-corrections.js gem grpc separate Apache-2.0, MIT <fossa-api-key>
 // Correct the grpc package with the Apache 2.0 and MIT licenses, but make it a choice to choose between these licenses in a single license group
 node license-corrections.js gem grpc choose Apache-2.0, MIT <fossa-api-key>
 ```
+
+## Guide for using `bulk-license-corrections.js`.
+
+#### Requirements
+
+You must have a csv file with the following headers and supplied data for required columns:
+
+`fossa-dependency-locator,fossa-fetcher-type,fossa-license-grouping,linked-grouping-id,corrected-license-id,corrected-license-text,package-url`
+
+- `fossa-dependency-locator`: This is the dependency name.
+- `fossa-fetcher-type`: This is the fetcher type of the dependency.
+- `fossa-license-grouping`: The grouping can either be `separate-grouping` or `linked-grouping`. See above singular license corectiosn guide for further definitions.
+- `linked-grouping-id`: This is required if multiple licenses of a package must be linked in a singular linked-grouping. ID must be unique. Best to go with integers. This field is not required for `separate-grouping`.
+- `corrected-license-id`: This is the license id that FOSSA recognizes.
+- `corrected-license-text`: This is the path to the corrected license.
+- `package-url`: This is the correct package url.
+
+The data must be clean and understandable, and it must match your understanding of how the license corrections must be done. A package with a singular license correction with a grouping of `linked-grouping` is valid, and acts like a `separate-grouping`, but it is not recommended to label such an entry.
+
+### How to use this script
+
+Here's how to run `bulk-license-corrections.js`: 
+
+```
+node license-corrections.js <fossa-api-key> <path-to-csv-of-license-corrections>
+```
+
+#### Limitations
+
+This script doesn't autoamtically fetch the packages `fetcher type`. Fetching the dependency's `fetcher type` is still a work in progress. If you need help finding the `fetcher type`, please contact your dedicated FOSSA Customer Success team and/or the FOSSA support team at support@fossa.com.
