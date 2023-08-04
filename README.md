@@ -66,4 +66,11 @@ node license-corrections.js <fossa-api-key> <path-to-csv-of-license-corrections>
 
 #### Limitations
 
-This script doesn't automatically fetch a package's `fetcher type`. Fetching the dependency's `fetcher type` is still a work in progress. If you need help finding the `fetcher type`, please contact your dedicated FOSSA Customer Success team and/or the FOSSA support team at support@fossa.com.
+This script doesn't automatically fetch a package's `fetcher type`. Fetching the dependency's `fetcher type` is still a work in progress. If you need help finding the `fetcher type`, please contact your dedicated FOSSA Customer Success (CS) team and/or the FOSSA support team at support@fossa.com.
+
+
+### Support
+
+Please reach out to your dedicated CS team team for feedback/and questions, else support@fossa.com.
+
+
