@@ -48,7 +48,7 @@ You must have a csv file with the following headers and supplied data for requir
 
 - `fossa-dependency-locator`: This is the dependency name.
 - `fossa-fetcher-type`: This is the fetcher type of the dependency.
-- `fossa-license-grouping`: The grouping can either be `separate-grouping` or `linked-grouping`. See above singular license corectiosn guide for further definitions.
+- `fossa-license-grouping`: The grouping can either be `separate-grouping` or `linked-grouping`. See above singular license corrections guide for further definitions.
 - `linked-grouping-id`: This is required if multiple licenses of a package must be linked in a singular linked-grouping. ID must be unique. Best to go with integers. This field is not required for `separate-grouping`.
 - `corrected-license-id`: This is the license id that FOSSA recognizes.
 - `corrected-license-text`: This is the path to the corrected license.
@@ -66,4 +66,4 @@ node license-corrections.js <fossa-api-key> <path-to-csv-of-license-corrections>
 
 #### Limitations
 
-This script doesn't autoamtically fetch a package's `fetcher type`. Fetching the dependency's `fetcher type` is still a work in progress. If you need help finding the `fetcher type`, please contact your dedicated FOSSA Customer Success team and/or the FOSSA support team at support@fossa.com.
+This script doesn't automatically fetch a package's `fetcher type`. Fetching the dependency's `fetcher type` is still a work in progress. If you need help finding the `fetcher type`, please contact your dedicated FOSSA Customer Success team and/or the FOSSA support team at support@fossa.com.
