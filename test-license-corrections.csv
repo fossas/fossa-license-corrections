@@ -1,0 +1,11 @@
+fossa-dependency-locator,fossa-fetcher-type,fossa-license-grouping,linked-grouping-id,corrected-license-id,corrected-license-text,package-url
+docutils,pip,linked-grouping,1,MIT,test-licenses/test1.txt,testlink.com/1
+docutils,pip,linked-grouping,1,Apache-2.0,test-licenses/test2.txt,testlink.com/1
+docutils,pip,separate-grouping,,0BSD,test-licenses/test3.txt,testlink.com/1
+docutils,pip,separate-grouping,,AAL,test-licenses/test3.txt,testlink.com/1
+flake8-isort,pip,separate-grouping,,MIT,test-licenses/test2.txt,testlink.com/2
+flake8-isort,pip,separate-grouping,,Apache-2.0,test-licenses/test3.txt,testlink.com/2
+ldap3,pip,separate-grouping,,MIT,test-licenses/test2.txt,testlink.com/3
+paramiko,pip,linked-grouping,1,MIT,test-licenses/test1.txt,testlink.com/4
+paramiko,pip,linked-grouping,1,Apache-2.0,test-licenses/test2.txt,testlink.com/4
+particular,pip,separate-grouping,1,0BSD,test-licenses/test3.txt,testlink.com/4
