@@ -40,7 +40,7 @@ node license-corrections.js gem grpc choose Apache-2.0, MIT <fossa-api-key>
 
 ## Guide for using `bulk-license-corrections.js`.
 
-#### Requirements
+### Requirements
 
 You must have a csv file with the following headers and supplied data for required columns:
 
@@ -64,7 +64,7 @@ Here's how to run `bulk-license-corrections.js`:
 node license-corrections.js <fossa-api-key> <path-to-csv-of-license-corrections>
 ```
 
-#### Limitations
+### Limitations
 
 This script doesn't automatically fetch a package's `fetcher type`. Fetching the dependency's `fetcher type` is still a work in progress. If you need help finding the `fetcher type`, please contact your dedicated FOSSA Customer Success (CS) team and/or the FOSSA support team at support@fossa.com.
 
