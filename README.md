@@ -3,7 +3,7 @@
 Here are some ways to do license corrections in FOSSA:
 
 - For singular license corrections, use `license-corrections.js`
-- For bulks license corrections, use `bulk-license-corrections.js`
+- For bulk license corrections, use `bulk-license-corrections.js`
 
 ## Guide for using `license-corrections.js`
 
